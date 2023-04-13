@@ -83,6 +83,133 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* General Styles */
+html {
+  color: #EEEFDA;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+body {
+  margin-left: 4%;
+  background-color: #152A3E;
+}
+
+h1 {
+  font-size: 5em;
+  font-family: 'lexand tera', sans-serif;
+}
+
+h2 {
+  font-size: 4.5em;
+  text-align: center;
+  font-family: 'lexand tera', sans-serif;
+}
+
+h3{
+  font-size: 4em;
+  font-family: 'lekton', serif;
+}
+
+p {
+  font-size: 3em;
+  font-family: 'lekton', serif;
+}
+
+li {
+  font-size: 3em;
+  font-family: 'lekton', serif;
+}
+
+a {
+  font-family: 'lekton', serif;
+  color: #CAC691
+}
+
+.wrapper {
+  width: 96%;
+}
+
+img {
+  width: 100%;
+}
+
+span {
+  font-weight: bolder;
+}
+
+/* Mobile */
+header {
+  padding: 30px 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
+  color: #CAC691;
+}
+
+.intro {
+  padding: 30px 0;
+}
+
+#about img {
+  border-radius: 50%;
+  padding: 15px 0;
+}
+
+#skills {
+  padding-bottom: 30px;
+}
+
+#projects {
+  padding: 80px 0;
+}
+
+#projects h2 {
+  margin: 0;
+  padding: 40px 0;
+}
+
+#projects article {
+  border: 4px #E9B14C;
+  margin-bottom: 80px;
+}
+
+#projects img {
+  border-radius: 5%;
+}
+
+.live-page {
+  color: #152A3E;
+  font-size: 3em;
+  border: 1px;
+  padding: 30px;
+  border-radius: 5%;
+  background-color: #CAC691;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+#projects .nametag, #projects .unplugged, #projects .guess, #projects .sticky {
+  margin-bottom: 120px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons p i {
+  font-size: 1.75em;
+}
+
+#contact p {
+  text-align: center;
+}
 
 /* ==========================================================================
    Helper classes
@@ -167,17 +294,69 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
+  #skills {
+    display: flex;
+  }
+    
+  #skills article {
+    display: flex;
+  } 
+    
+  #projects {
+    display: flex;
+  }
+    
+  #projects .four-projects {
+    display: flex;
+    flex-flow: row wrap;
+  }
+    
+  #projects article {
+    width: 45%;
+  }
+    
+  #projects img {
+    height: 300px;
+  }
 }
+@media only screen and (min-width: 1200px) {
+  /* Style adjustments for viewports that meet the condition */
+ #about {
+  display: flex;
+ }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+ #about article {
+  display: flex;
+  flex-flow: row wrap;
+ }
+
+ #skills {
+  display: flex;
+ }
+
+ #skills article {
+  display: flex;
+ }
+
+ #projects {
+  display: flex;
+ }
+
+ #projects .four-projects {
+  display: flex;
+  flex-flow: row wrap;
+ }
+
+ #projects article {
+  width: 45%;
+ }
+
+ #projects img {
+  height: 300px;
+ }
 }
-
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:

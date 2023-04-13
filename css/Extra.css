@@ -1,0 +1,38 @@
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+  }
+  
+  #about {
+    display: flex;
+  }
+  
+  #about article {
+    display: flex;
+  }
+  
+  #skills {
+    display: flex;
+  }
+  
+  #skills article {
+    display: flex;
+  }
+  
+  #projects {
+    display: flex;
+  }
+  
+  #projects .four-projects {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  #projects article {
+    width: 45%
+  }
+  
+  #projects img {
+    height: 300px;
+  }
