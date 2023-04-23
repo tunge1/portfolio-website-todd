@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.2;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -89,6 +90,8 @@ html {
   font-size: 16px;
   line-height: 1.4;
 }
+
+
 
 body {
   margin-left: 4%;
@@ -375,6 +378,10 @@ header nav ul {
     height: 200px;
   }
 
+  #projects .gallery .live-page {
+    margin-top: 65px;
+   }
+
   .icons {
     display: flex;
     justify-content: center;
@@ -434,6 +441,11 @@ header nav ul {
   width: 80%
  }
 
+ #skills article div {
+  width: 40%;
+  margin-left: 200px;
+ }
+
  #projects {
   display: flex;
   padding: 80px 80px 80px 80px;
@@ -444,16 +456,17 @@ header nav ul {
  }
 
  #projects article {
-  width: 46%;
+  width: 40%;
  }
  
  #projects img {
   height: 300px;
  }
 
- #projects .guess .live-page {
+ #projects .unplugged .live-page {
   margin-top: 65px;
  }
+ 
 }
 /* ==========================================================================
    Print styles.
