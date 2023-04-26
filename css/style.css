@@ -155,6 +155,22 @@ header nav ul {
   margin: 0;
 }
 
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+nav li:hover {
+  border: 2px #cac691 solid;
+  border-radius: 10%;
+}
+
 .intro {
   padding: 40px 0;
 }
@@ -178,6 +194,12 @@ header nav ul {
   padding: 15px 0;
   height: 200px;
   width: 200px;
+}
+
+#projects img:hover {
+  border-radius: 5%;
+  padding: 0;
+  border: 5px #e9b14c solid;
 }
 
 #skills {
@@ -215,11 +237,36 @@ header nav ul {
   background-color: #CAC691;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin: 40px 5px 0 0;
 }
 
 .live-page p {
   text-align: center;
+}
+
+.code-page {
+  color: #152A3E;
+  font-size: 1.15em;
+  border: 1px;
+  padding: 10px;
+  border-radius: 5%;
+  background-color: #CAC691;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 0 5px;
+}
+
+.code-page:hover, .live-page:hover {
+  background-color: #B4C7D9;
+  font-size: larger;
+}
+
+#projects .side-links {
+  display: flex;
+}
+
+#projects .side-links a {
+  width: 50%;
 }
 
 #projects .nametag, #projects .unplugged, #projects .guess, #projects .sticky {
