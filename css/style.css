@@ -155,16 +155,21 @@ header nav ul {
   margin: 0;
 }
 
-a:link { text-decoration: none; }
+a:link {
+  text-decoration: none;
+}
 
+a:visited {
+  text-decoration: none;
+}
 
-a:visited { text-decoration: none; }
+a:hover {
+  text-decoration: none;
+}
 
-
-a:hover { text-decoration: none; }
-
-
-a:active { text-decoration: none; }
+a:active {
+  text-decoration: none;
+}
 
 nav li:hover {
   border: 2px #cac691 solid;
@@ -220,6 +225,10 @@ nav li:hover {
   margin-bottom: 80px;
 }
 
+#projects .skills-text {
+  margin-bottom: 0;
+}
+
 #projects img {
   border-radius: 5%;
 }
@@ -269,8 +278,8 @@ nav li:hover {
   width: 50%;
 }
 
-#projects .nametag, #projects .unplugged, #projects .guess, #projects .sticky {
-  margin-bottom: 40px;
+#projects .nametag, #projects .unplugged, #projects .guess, #projects .sticky, #projects .gallery {
+  margin-bottom: 80px;
 }
 
 .icons {
@@ -410,7 +419,7 @@ nav li:hover {
     display: flex;
   }
     
-  #projects .four-projects {
+  #projects .five-projects {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -424,10 +433,6 @@ nav li:hover {
   #projects img {
     height: 200px;
   }
-
-  #projects .gallery .live-page {
-    margin-top: 65px;
-   }
 
   .icons {
     display: flex;
@@ -498,7 +503,7 @@ nav li:hover {
   padding: 80px 80px 80px 80px;
  }
 
- #projects .four-projects {
+ #projects .five-projects {
   display: flex;
  }
 
@@ -509,11 +514,6 @@ nav li:hover {
  #projects img {
   height: 300px;
  }
-
- #projects .unplugged .live-page {
-  margin-top: 65px;
- }
- 
 }
 /* ==========================================================================
    Print styles.
